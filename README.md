@@ -1,4 +1,28 @@
-# Yoichiro Ito
+## Yoichiro Ito
+
+Backend/Mobile developer
+
+
+### What's my focus
+
+**Back-end**
+
+Scala / Akka HTTP / DDD
+
+Clean Architecture / Testing
+
+**Mobile**
+
+Dart / Flutter / Android
+
+**Other**
+
+Firebase / GCP / AWS
+
+TypeScript / React.js
+
+Git / GitHub
+
 
 <!--
 **ItoYo16u/ItoYo16u** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
