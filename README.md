@@ -1,6 +1,6 @@
 ## Yoichiro Ito
 
-Backend/Mobile developer
+Backend / Mobile developer
 
 
 ### What's my focus
