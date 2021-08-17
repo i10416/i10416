@@ -1,8 +1,6 @@
 Backend / Mobile developer
 
 
-### What's my focus
-
 Scala / Rust / Dart / Flutter / Kotlin
 
 
