@@ -1,4 +1,4 @@
-Backend / Mobile developer
+SWE
 
 
 Scala / Rust / Dart / Flutter / Kotlin
