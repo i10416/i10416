@@ -1,7 +1,7 @@
 SWE
 
 
-Scala / Rust / Dart / Flutter / Kotlin
+Scala / Rust / Dart / Kotlin
 
 
 
