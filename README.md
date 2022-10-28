@@ -11,7 +11,7 @@ Scala & Rust enthusiast
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=i10416&count_private=true&hide=jupyter%20notebook,html,javascript&layout=compact&theme=dracula)
 
 - 🕸 web dev, mostly backend and infrastructure
-- dev-ops, data engineering
+- 🤖 dev-ops, data engineering
 - ✨ OSS contributor
 - 👀 intersted in static typed languages and functional Functional Programming
 - 🎓 graduated from Kyoto university🍁
