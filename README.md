@@ -14,7 +14,6 @@ Scala & Rust enthusiast
 - 🤖 dev-ops, data engineering
 - ✨ OSS contributor
 - 👀 intersted in static typed languages and functional Functional Programming
-- 🎓 graduated from Kyoto university🍁
 - 🏠 Live in Japan🇯🇵
 
 ## Contribute
