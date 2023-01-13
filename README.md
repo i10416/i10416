@@ -14,7 +14,7 @@ Scala & Rust enthusiast
 - 🤖 dev-ops, data engineering
 - ✨ OSS contributor
 - 👀 intersted in static typed languages and functional Functional Programming
-- 🏠 Live in Japan🇯🇵
+
 
 ## Contribute
 - Follow me on Twitter ([@by110416](https://twitter.com/by110416)) or GitHub ([i10416](https://github.com/i10416)) ✌️
