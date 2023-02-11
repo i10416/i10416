@@ -11,7 +11,7 @@ Scala & Rust enthusiast
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=i10416&count_private=true&hide=jupyter%20notebook,html,javascript&layout=compact&theme=dracula)
 
 - 🕸 web dev, mostly backend and infrastructure
-  - building gRPC server in Golang and Rust
+  - building/maintaining gRPC server in Golang and Rust
   - managing AWS and GCP by terraform
 - 🤖 dev-ops, data engineering
   - working on Spark, Scala and SQL 
