@@ -1,6 +1,8 @@
 
 SWE
 
+- talks: [https://speakerdeck.com/i10416](https://speakerdeck.com/i10416)
+
 Scala & Rust enthusiast
 
 Scala 3 macro チョットワカル
