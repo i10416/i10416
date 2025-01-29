@@ -97,7 +97,7 @@ AWS ならば SSM, GCP ならば cloud-sql-proxy が近いが完全にユース�
 
 配信の典型的なパターンは URL に一定のルール(`z/x/y/name.ext`)を定める方法. わかりやすいものだと Map Box の地図のタイル画像で利用されている.
 
-URL にルールを定めるなら Map Box のドキュメンテーション(https://docs.mapbox.com/ios/maps/api/6.4.1/tile-url-templates.html)のように仕様を明確にしておくといい.
+URL にルールを定めるなら Map Box のドキュメンテーション( https://docs.mapbox.com/ios/maps/api/6.4.1/tile-url-templates.html) のように仕様を明確にしておくといい.
 
 機械学習モデルは実行時の初期化やバージョン管理・実験管理を意識する必要がある.
 実行時の初期化は Cloud Run + GCS のマウントの構成をとれば比較的シンプルに実現できる.
