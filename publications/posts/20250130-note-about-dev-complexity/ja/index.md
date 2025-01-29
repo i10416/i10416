@@ -111,11 +111,20 @@ URL にルールを定めるなら Map Box のドキュメンテーション( ht
 AWS には [Visual Asset Management System](https://github.com/awslabs/visual-asset-management-system) というソリューションがあるが、
 これがどれくらい使えるのかはわかっていない.
 
-## Cache
-### Problem
-Stateless に扱いたいはずのサービスを Stateful に扱わないといけなくなる.
+## アプリケーションの状態管理
 
-## JVM
 ### Problem
-暖気のせいで Stateless に扱いたいはずのサービスを Stateful に扱わないといけなくなる.
+アプリケーション内部の状態、例えば UI、並行処理における排他制御、Cache、初期化や JVM の暖気は状態が絡んでくるせいで複雑になりがち.
 
+### Solution
+
+#### 典型的な UI のパターン
+
+#### 並行処理における排他制御のパターン
+
+#### キャッシュのパターン
+
+#### JVM の暖気
+
+
+ 
