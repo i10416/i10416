@@ -130,4 +130,6 @@ AWS には [Visual Asset Management System](https://github.com/awslabs/visual-as
 #### JVM の暖気
 
 
- 
+
+## バージョニング
+
