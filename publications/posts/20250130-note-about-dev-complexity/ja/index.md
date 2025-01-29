@@ -124,6 +124,9 @@ AWS には [Visual Asset Management System](https://github.com/awslabs/visual-as
 
 #### キャッシュのパターン
 
+- ミドルウェア(e.g. Redis) に寄せる
+- フレームワーク(e.g. Apollo)に寄せる
+
 #### JVM の暖気
 
 
