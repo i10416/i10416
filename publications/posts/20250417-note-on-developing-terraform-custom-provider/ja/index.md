@@ -33,6 +33,8 @@ TF_CLI_CONFIG_FILE="${WORKSPACE}/.terraform.tfrc"
 TF_LOG="INFO"
 ```
 
+TF_CLI_CONFIG_FILE 環境変数がないと terraform CLI はユーザーのホームディレクトリを読みにいく。
+
 利用側からは以下のように provider を指定する。
 
 
