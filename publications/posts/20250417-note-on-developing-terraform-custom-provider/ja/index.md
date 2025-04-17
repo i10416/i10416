@@ -20,6 +20,10 @@ provider_installation {
 
 ```
 
+dev_overrides は provider 開発者向けの設定で、これを指定することでバージョンとチェックサムの検証をスキップし、LHS に設定した名前の provider を RHS に指定したディレクトリから読み込む
+
+> This disables the version and checksum verifications for this provider and forces Terraform to look for the null provider plugin in the given directory.
+
 設定ファイルの書き方は以下のページにまとまっている。
 
 - https://developer.hashicorp.com/terraform/cli/config/config-file
