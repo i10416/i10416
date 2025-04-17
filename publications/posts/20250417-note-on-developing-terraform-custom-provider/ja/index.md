@@ -20,6 +20,10 @@ provider_installation {
 
 ```
 
+設定ファイルの書き方は以下のページにまとまっている。
+
+- https://developer.hashicorp.com/terraform/cli/config/config-file
+
 次のような環境変数を指定しておくと楽。
 
 ```toml
