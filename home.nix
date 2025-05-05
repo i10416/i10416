@@ -13,6 +13,7 @@ in
   fonts.fontconfig.enable = true;
   home.language.base = "en_US.UTF-8";
   programs.home-manager.enable = true;
+  programs.java.enable = true;
   programs.zsh = import ./home-manager/zsh/default.nix;
   programs.git = import ./home-manager/git/default.nix;
   programs.gh = import ./home-manager/gh/default.nix;

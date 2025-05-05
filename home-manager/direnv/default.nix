@@ -1,5 +1,5 @@
 {
-    enable = true;
-    enableZshIntegration = true;
-    nix-direnv.enable = true;
-  }
+  enable = true;
+  enableZshIntegration = true;
+  nix-direnv.enable = true;
+}

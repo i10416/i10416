@@ -9,7 +9,10 @@ in
       substituters = [ "https://cache.nixos.org/" ];
       trusted-public-keys = [ "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY=" ];
       trusted-users = [ "@admin" ];
-      experimental-features = ["nix-command" "flakes"];
+      experimental-features = [
+        "nix-command"
+        "flakes"
+      ];
       max-jobs = 8;
     };
     extraOptions =
