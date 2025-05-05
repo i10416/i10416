@@ -43,6 +43,9 @@
         show-recents = false;
         mineffect = "scale";
       };
+      WindowManager = {
+        EnableStandardClickToShowDesktop = false;
+      };
       loginwindow = {
         GuestEnabled = false;
         SHOWFULLNAME = true;
