@@ -7,6 +7,13 @@ vscode-with-extensions.override {
       jnoortheen.nix-ide
       marp-team.marp-vscode
       shardulm94.trailing-spaces
+      scalameta.metals
+      mkhl.direnv
+      tamasfe.even-better-toml
+      arrterian.nix-env-selector
+      redhat.vscode-yaml
+      eamodio.gitlens
+      hashicorp.terraform
     ]
     ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       #{
