@@ -37,7 +37,9 @@
         CreateDesktop = false;
         ShowPathbar = true;
         ShowStatusBar = true;
+        QuitMenuItem = true;
       };
+      screencapture.location = "~/Pictures/screenshots";
       dock = {
         tilesize = 48;
         autohide = false;
