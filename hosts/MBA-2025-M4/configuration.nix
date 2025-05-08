@@ -3,9 +3,12 @@
 let
   # configuration
   nix = import ../../foundation/nix.nix { inherit pkgs lib; };
+  userKeyMapping = import ../../foundation/darwin/hardware/keyboard/jis.nix;
   unfree-allow-list = import ../../foundation/unfree-allow-list.nix { inherit lib; };
   system = import ../../foundation/system.nix { inherit pkgs; };
-  darwin-system = import ../../foundation/darwin/universal/system.nix { inherit self; };
+  darwin-system = import ../../foundation/darwin/universal/system.nix {
+    inherit self userKeyMapping;
+  };
   darwin-network = import ../../foundation/darwin/universal/network.nix;
   # tools
   universal-tools = import ../../tools/universal/default.nix { inherit pkgs; };

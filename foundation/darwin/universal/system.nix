@@ -1,5 +1,6 @@
 {
   self,
+  userKeyMapping ? [ ],
   stateVersion ? 6,
   ...
 }:
@@ -10,8 +11,10 @@
     # Set Git commit hash for darwin-version.
     configurationRevision = self.rev or self.dirtyRev or null;
     keyboard = {
+      # See https://developer.apple.com/library/archive/technotes/tn2450/_index.html
+      inherit userKeyMapping;
       enableKeyMapping = true;
-      remapCapsLockToEscape = true;
+      remapCapsLockToControl = true;
     };
     defaults = {
       SoftwareUpdate.AutomaticallyInstallMacOSUpdates = false;
