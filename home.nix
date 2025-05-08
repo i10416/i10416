@@ -21,6 +21,8 @@ in
   programs.bat = import ./home-manager/bat/default.nix;
   programs.tmux = import ./home-manager/tmux/default.nix { inherit pkgs; };
   home.packages = [
+    # nix
+    pkgs.nil
     # tools
     pkgs.tree
     # rust

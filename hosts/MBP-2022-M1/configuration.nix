@@ -27,7 +27,6 @@ in
   ];
   environment.systemPackages = [
     vscode
-    pkgs.nil
   ];
 
   # Nix configuration ------------------------------------------------------------------------------

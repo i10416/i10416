@@ -27,7 +27,6 @@ in
   ];
   environment.systemPackages = [
     vscode
-    pkgs.nil
   ];
 
   nixpkgs.hostPlatform = "aarch64-darwin";
