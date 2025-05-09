@@ -20,6 +20,7 @@ in
   programs.direnv = import ./home-manager/direnv/default.nix;
   programs.bat = import ./home-manager/bat/default.nix;
   programs.tmux = import ./home-manager/tmux/default.nix { inherit pkgs; };
+  programs.vscode = import ./home-manager/vscode/default.nix;
   home.packages = [
     # nix
     pkgs.nil
