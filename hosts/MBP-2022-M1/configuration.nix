@@ -13,7 +13,6 @@ let
   # tools
   universal-tools = import ../../tools/universal/default.nix { inherit pkgs; };
   vim = (import ../../tools/vim/system/-24.05/default.nix);
-  vscode = import ../../tools/vscode/default.nix { inherit pkgs; };
 in
 {
   imports = [
@@ -24,9 +23,6 @@ in
     darwin-network
     universal-tools
     vim
-  ];
-  environment.systemPackages = [
-    vscode
   ];
 
   # Nix configuration ------------------------------------------------------------------------------
