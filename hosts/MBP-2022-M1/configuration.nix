@@ -13,14 +13,21 @@ let
   # tools
   universal-tools = import ../../tools/universal/default.nix { inherit pkgs; };
   vim = (import ../../tools/vim/system/-24.05/default.nix);
+  launchd = import ../../foundation/darwin/universal/launchd.nix;
 in
 {
+  # `home-manager.programs.vscode` does not work properly.
+  environment.systemPackages = [
+    pkgs.vscode
+  ];
+
   imports = [
     nix
     unfree-allow-list
     system
     darwin-system
     darwin-network
+    launchd
     universal-tools
     vim
   ];
