@@ -49,7 +49,7 @@
           specialArgs = inputs;
           system = "aarch64-darwin";
           modules = [
-            (./hosts/MBP-2022-M1/configuration.nix {
+            (import ./hosts/MBP-2022-M1/configuration.nix {
               inherit self username;
             })
             home-manager.darwinModules.home-manager
