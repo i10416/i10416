@@ -4,6 +4,7 @@ let
 in
 {
   nix = {
+    gc.automatic = true;
     optimise.automatic = true;
     settings = {
       substituters = [ "https://cache.nixos.org/" ];
