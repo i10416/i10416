@@ -34,8 +34,6 @@ in
     # go
     pkgs.go
     pkgs.gopls
-    # node
-    pkgs.nodejs_22
     # native
     pkgs.ninja
     pkgs.cmake
