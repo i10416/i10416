@@ -1,7 +1,10 @@
 {
   enable = true;
-
   profiles.default.userSettings = {
+    "search.exclude" = {
+      "**/node_modules" = true;
+      "**/.direnv" = true;
+    };
     "files.insertFinalNewline" = false;
     "files.eol" = "\n";
     "editor.fontSize" = 13;
