@@ -29,6 +29,8 @@ in
     pkgs.nil
     # tools
     pkgs.tree
+    # infrastructure
+    pkgs.tenv
     # rust
     pkgs.rustup
     # scala
