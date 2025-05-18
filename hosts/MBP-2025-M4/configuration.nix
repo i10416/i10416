@@ -29,4 +29,5 @@ in
     home = "/Users/${username}";
     shell = pkgs.zsh;
   };
+  system.primaryUser = username;
 }

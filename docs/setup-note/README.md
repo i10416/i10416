@@ -5,6 +5,12 @@
 
 Install Nix
 
+As of May 2025, you can install Nix by running the following command.
+
+```sh
+sh <(curl --proto '=https' --tlsv1.2 -L https://nixos.org/nix/install)
+```
+
 ### Setup nix-darwin with Flake
 
 ```sh
@@ -45,7 +51,7 @@ git clone https://github.com/i10416/i10416
 ### Sync
 
 ```sh
-darwin-rebuild switch
+darwin-rebuild switch --flake .
 ```
 
 ## Require a password after waking your Mac
