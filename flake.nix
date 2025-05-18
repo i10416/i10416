@@ -63,6 +63,24 @@
             }
           ];
         };
+        MBP-2025-M4 = darwinSystem {
+          specialArgs = inputs;
+          system = "aarch64-darwin";
+          modules = [
+            (import ./hosts/MBP-2025-M4/configuration.nix {
+              inherit self username;
+            })
+            home-manager.darwinModules.home-manager
+            {
+              home-manager.useGlobalPkgs = true;
+              home-manager.useUserPackages = true;
+              home-manager.users.${username} = import ./home.nix {
+                inherit username;
+                stateVersion = "24.11";
+              };
+            }
+          ];
+        };
       };
       overlays = {
         nil = final: prev: {
