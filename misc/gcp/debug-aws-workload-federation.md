@@ -21,3 +21,4 @@
 ## Reference
 - https://google.aip.dev/auth/4110
 - https://github.com/googleapis/google-api-python-client/blob/main/docs/logging.md
+- https://cloud.google.com/iam/docs/workload-identity-federation-with-other-clouds#aws_1
