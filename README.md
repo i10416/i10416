@@ -5,7 +5,7 @@ SWE
 
 Rust & Scala enthusiast
 
-Have a strong interst in code generation, meta programing and macros
+Have a strong interest in code generation, meta programing and macros
 
 
 ## About
