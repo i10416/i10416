@@ -63,7 +63,7 @@
             }
           ];
         };
-        MBP-2025-M4 = darwinSystem {
+        MBP-2025-M4 = darwinSystem rec {
           specialArgs = inputs;
           system = "aarch64-darwin";
           modules = [

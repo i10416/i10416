@@ -23,6 +23,7 @@ in
     universal-tools
     vim
   ];
+  system.primaryUser = username;
 
   nixpkgs.hostPlatform = "aarch64-darwin";
   users.users.${username} = {
