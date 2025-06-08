@@ -30,7 +30,7 @@ Nが増えても現実的な時間・コストで問題を解けるようにす�
 会社として OSS エコシステムやコミュニティに還元する姿勢があるといい。例えば、会社が OSS コントリビューションを業務の一部として認めていたり、
 OSS にスポンサーしていたり、イベントをホストしていたりするといい。
 
-[^2]: https://www.glassdoor.com/Salary/Piano-Software-Engineer-Salaries-E1100027_D_KO6,23.htm を参照
+[^2]: https://izumisy.work/entry/2023/12/03/190229 を参照
 
 ## 人事・制度・給与
 
