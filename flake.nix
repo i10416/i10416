@@ -54,6 +54,7 @@
             })
             home-manager.darwinModules.home-manager
             {
+              home-manager.backupFileExtension = "backup";
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
               home-manager.users.${username} = import ./home.nix {
@@ -63,24 +64,28 @@
             }
           ];
         };
-        MBP-2025-M4 = darwinSystem rec {
-          specialArgs = inputs;
-          system = "aarch64-darwin";
-          modules = [
-            (import ./hosts/MBP-2025-M4/configuration.nix {
-              inherit self username;
-            })
-            home-manager.darwinModules.home-manager
-            {
-              home-manager.useGlobalPkgs = true;
-              home-manager.useUserPackages = true;
-              home-manager.users.${username} = import ./home.nix {
-                inherit username;
-                stateVersion = "24.11";
-              };
-            }
-          ];
-        };
+        MBP-2025-M4 =
+          let
+            system = "aarch64-darwin";
+          in
+          darwinSystem rec {
+            specialArgs = inputs;
+            inherit system;
+            modules = [
+              (import ./hosts/MBP-2025-M4/configuration.nix {
+                inherit self username;
+              })
+              home-manager.darwinModules.home-manager
+              {
+                home-manager.useGlobalPkgs = true;
+                home-manager.useUserPackages = true;
+                home-manager.users.${username} = import ./home.nix {
+                  inherit username;
+                  stateVersion = "24.11";
+                };
+              }
+            ];
+          };
       };
       overlays = {
         nil = final: prev: {
