@@ -1,0 +1,45 @@
+{
+  "[csv]": {
+    "editor.wordWrap": "off"
+  },
+  "editor.bracketPairColorization.enabled": true,
+  "editor.fontFamily": "\"Ricty Diminished\", Consolas, 'Courier New', monospace",
+  "editor.fontSize": 13,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": false,
+  "editor.renderWhitespace": "boundary",
+  "editor.rulers": [
+    80
+  ],
+  "editor.tabSize": 2,
+  "files.eol": "\n",
+  "files.insertFinalNewline": false,
+  "files.watcherExclude": {
+    "**/.bloop": true,
+    "**/.metals": true,
+    "**/target": true
+  },
+  "gitlens.changes.locations": [
+    "gutter",
+    "overview"
+  ],
+  "gitlens.hovers.changesDiff": "line",
+  "gitlens.hovers.currentLine.over": "line",
+  "search.exclude": {
+    "**/.direnv": true,
+    "**/node_modules": true,
+    "**/.metals": true,
+    "**/target": true
+  },
+  "terminal.integrated.fontSize": 13,
+  "metals.inlayHints.byNameParameters.enable": true,
+  "metals.defaultBspToBuildTool": true,
+  "metals.inlayHints.hintsInPatternMatch.enable": true,
+  "metals.inlayHints.inferredTypes.enable": true,
+  "metals.inlayHints.namedParameters.enable": true,
+  "csv.enabled": true,
+  "csv.treatFirstRowAsHeader": false,
+  "git.openRepositoryInParentFolders": "never",
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "telemetry.telemetryLevel": "off"
+}
