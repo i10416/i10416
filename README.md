@@ -24,5 +24,8 @@ WHOAMI?
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=i10416&count_private=true&hide=jupyter%20notebook,html,javascript&layout=compact&theme=dracula)
 
-## Contribute
-- Follow me on Twitter ([@by110416](https://twitter.com/by110416)) or GitHub ([i10416](https://github.com/i10416))
+## Links
+
+- Linkedin: https://www.linkedin.com/in/11o416/
+- X.com ([@by110416](https://x.com/by110416))
+
