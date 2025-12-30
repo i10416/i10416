@@ -9,11 +9,12 @@
   - https://github.com/abdolence/gcloud-sdk-rs
   - https://github.com/scanamo/scanamo
   - https://github.com/neotypes/neotypes
-  - https://github.com/i10416/terraform-provider-piano
-  - https://github.com/i10416/grpc-swift-flake
-  - https://github.com/i10416/terraform-provider-sendgrid-plus
-  - https://github.com/i10416/sdk-hub
-  - https://github.com/i10416/firebase-messaging-rs
+  - https://github.com/i10416/codegen Terraform provider codegen
+  - https://github.com/i10416/terraform-provider-piano Piano Terraform provider
+  - https://github.com/i10416/terraform-provider-sendgrid-plus SendGrid Terraform provider
+  - https://github.com/i10416/grpc-swift-flake grpc-swift Nix flake
+  - https://github.com/i10416/sdk-hub 3rd party API SDKs
+  - https://github.com/i10416/firebase-messaging-rs Firebase Messaging Rust Client
 - Speaker at conferences and meetups: [https://speakerdeck.com/i10416](https://speakerdeck.com/i10416)
 - Have a strong interest in code generation, meta programing and macros
 
