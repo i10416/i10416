@@ -9,6 +9,7 @@
   - https://github.com/abdolence/gcloud-sdk-rs
   - https://github.com/scanamo/scanamo
   - https://github.com/neotypes/neotypes
+  - https://github.com/indoorvivants/toml-scala
   - https://github.com/i10416/codegen Terraform provider codegen
   - https://github.com/i10416/terraform-provider-piano Piano Terraform provider
   - https://github.com/i10416/terraform-provider-sendgrid-plus SendGrid Terraform provider
