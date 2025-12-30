@@ -10,6 +10,7 @@ WHOAMI?
   - https://github.com/scanamo/scanamo
   - https://github.com/neotypes/neotypes
   - https://github.com/i10416/terraform-provider-piano
+  - https://github.com/i10416/grpc-swift-flake
   - https://github.com/i10416/terraform-provider-sendgrid-plus
   - https://github.com/i10416/sdk-hub
   - https://github.com/i10416/firebase-messaging-rs
