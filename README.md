@@ -16,6 +16,7 @@
   - https://github.com/i10416/grpc-swift-flake grpc-swift Nix flake
   - https://github.com/i10416/sdk-hub 3rd party API SDKs
   - https://github.com/i10416/firebase-messaging-rs Firebase Messaging Rust Client
+  - https://github.com/i10416/mirrors small macro to extract struct fields
 - Speaker at conferences and meetups: [https://speakerdeck.com/i10416](https://speakerdeck.com/i10416)
 - Have a strong interest in code generation, meta programing and macros
 
