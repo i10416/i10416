@@ -1,6 +1,6 @@
 { pkgs, ... }:
 let
-  vim = pkgs.vim_configurable.override { };
+  vim = pkgs.vim-full.override { };
 in
 {
   environment.variables = {

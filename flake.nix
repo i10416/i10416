@@ -1,11 +1,10 @@
 {
   description = "nix-darwin system flake";
-
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-    nix-darwin.url = "github:nix-darwin/nix-darwin/master";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
+    nix-darwin.url = "github:nix-darwin/nix-darwin/nix-darwin-25.11";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
-    home-manager.url = "github:nix-community/home-manager";
+    home-manager.url = "github:nix-community/home-manager/release-25.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     nil.url = "github:oxalica/nil";
     nil.inputs.nixpkgs.follows = "nixpkgs";
@@ -42,25 +41,6 @@
                   stateVersion = "24.11";
                 }
               );
-            }
-          ];
-        };
-        MBP-2022-M1 = darwinSystem {
-          specialArgs = inputs;
-          system = "aarch64-darwin";
-          modules = [
-            (import ./hosts/MBP-2022-M1/configuration.nix {
-              inherit self username;
-            })
-            home-manager.darwinModules.home-manager
-            {
-              home-manager.backupFileExtension = "backup";
-              home-manager.useGlobalPkgs = true;
-              home-manager.useUserPackages = true;
-              home-manager.users.${username} = import ./home.nix {
-                inherit username;
-                stateVersion = "22.05";
-              };
             }
           ];
         };

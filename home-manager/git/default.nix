@@ -29,15 +29,18 @@
     "dist"
     "result"
   ];
-  userName = "i10416";
-  userEmail = "ito.yo16uh90616@gmail.com";
-  lfs.enable = true;
-  extraConfig = {
+  settings = {
     color = {
       ui = "auto";
     };
     init = {
       defaultBranch = "main";
     };
+    user = {
+      name = "i10416";
+      email = "ito.yo16uh90616@gmail.com";
+    };
   };
+
+  lfs.enable = true;
 }
