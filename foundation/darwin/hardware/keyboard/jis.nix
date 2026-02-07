@@ -1,4 +1,32 @@
+# let
+#   numbers = builtins.genList (x: {
+#     # shift 1 ~ 9 right
+#     HIDKeyboardModifierMappingSrc = 30064771103 + x;
+#     HIDKeyboardModifierMappingDst = 30064771103 + x - 1;
+#   }) 9;
+# in
 [
+  # {
+  #   # replace 1 with `/~
+  #   HIDKeyboardModifierMappingSrc = 30064771102;
+  #   HIDKeyboardModifierMappingDst = 30064771122;
+  # }
+  # {
+  #   # shift 0 right
+  #   HIDKeyboardModifierMappingSrc = 30064771117;
+  #   HIDKeyboardModifierMappingDst = 30064771111;
+  # }
+  # {
+  #   HIDKeyboardModifierMappingSrc = 30064771118;
+  #   # shift -/_ right
+  #   HIDKeyboardModifierMappingDst = 30064771117;
+  # }
+  # {
+  #   # international3:¥
+  #   HIDKeyboardModifierMappingSrc = 1095216660617;
+  #   # shift +/= right
+  #   HIDKeyboardModifierMappingDst = 30064771118;
+  # }
   {
     # 0x700000039:caps lock
     HIDKeyboardModifierMappingSrc = 30064771129;
