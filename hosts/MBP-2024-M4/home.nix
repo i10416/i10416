@@ -42,6 +42,9 @@ in
     # native
     pkgs.ninja
     pkgs.cmake
+    # docker
+    docker
+    colima
   ];
   news.display = "silent";
 }
