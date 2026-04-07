@@ -43,8 +43,8 @@ in
     pkgs.ninja
     pkgs.cmake
     # docker
-    docker
-    colima
+    pkgs.docker
+    pkgs.colima
   ];
   news.display = "silent";
 }
