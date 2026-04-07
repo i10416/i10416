@@ -18,12 +18,12 @@ mkdir -p ~/.config/nix
 ```
 
 ```sh
-sudo echo "experimental-features = nix-command flakes" >> ~/.config/nix/nix.conf
+echo "experimental-features = nix-command flakes" >> ~/.config/nix/nix.conf
 ```
 OR
 
 ```sh
-echo "experimental-features = nix command flakes" >> /etc/nix/nix.conf
+sudo echo "experimental-features = nix command flakes" >> /etc/nix/nix.conf
 ```
 
 #### From Scrach
