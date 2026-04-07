@@ -31,6 +31,7 @@
         "com.apple.sound.beep.feedback" = 0;
       };
       finder = {
+        # Show Hidden Files
         AppleShowAllFiles = true;
         AppleShowAllExtensions = true;
         _FXShowPosixPathInTitle = true;
@@ -38,6 +39,10 @@
         ShowPathbar = true;
         ShowStatusBar = true;
         QuitMenuItem = true;
+        # Perform Search in Current Directory(Not System Wide)
+        FXDefaultSearchScope = "SCcf";
+        # Use List View by Default
+        FXPreferredViewStyle = "Nlsv";
       };
       screencapture.location = "~/Pictures/screenshots";
       dock = {
