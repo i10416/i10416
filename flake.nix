@@ -38,7 +38,7 @@
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
               home-manager.users."yoichiro.ito" = (
-                import ./home.nix {
+                import ./hosts/MBP-2024-M4/home.nix {
                   username = "yoichiro.ito";
                   stateVersion = "25.05";
                 }
