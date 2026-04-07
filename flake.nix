@@ -24,6 +24,28 @@
     in
     {
       darwinConfigurations = {
+        # MBP-2024-M4(14 inch, JIS)
+        HP7Q66T465 = darwinSystem {
+          specialArgs = inputs;
+          system = "aarch64-darwin";
+          modules = [
+            (import ./hosts/MBP-2024-M4/configuration.nix {
+              inherit self;
+              username = "yoichiro.ito";
+            })
+            home-manager.darwinModules.home-manager
+            {
+              home-manager.useGlobalPkgs = true;
+              home-manager.useUserPackages = true;
+              home-manager.users."yoichiro.ito" = (
+                import ./home.nix {
+                  username = "yoichiro.ito";
+                  stateVersion = "25.05";
+                }
+              );
+            }
+          ];
+        };
         MBA-2025-M4 = darwinSystem {
           specialArgs = inputs;
           system = "aarch64-darwin";
