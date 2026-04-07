@@ -20,6 +20,12 @@ mkdir -p ~/.config/nix
 ```sh
 echo "experimental-features = nix-command flakes" >> ~/.config/nix/nix.conf
 ```
+OR
+
+```
+echo "experimental-features" = nix command flakes" >> /etc/nix/nix.conf
+```
+
 #### From Scrach
 ```sh
 nix flake init -t nix-darwin/master
