@@ -18,7 +18,7 @@ mkdir -p ~/.config/nix
 ```
 
 ```sh
-echo "experimental-features = nix-command flakes" >> ~/.config/nix/nix.conf
+sudo echo "experimental-features = nix-command flakes" >> ~/.config/nix/nix.conf
 ```
 OR
 
