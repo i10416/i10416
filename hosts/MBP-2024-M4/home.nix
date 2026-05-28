@@ -35,6 +35,7 @@ in
     pkgs.rustup
     # scala
     pkgs.scala-cli
+    pkgs.sbt
     pkgs.mill
     # go
     pkgs.go
