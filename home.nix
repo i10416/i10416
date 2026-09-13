@@ -36,6 +36,7 @@ in
     # scala
     pkgs.scala-cli
     pkgs.mill
+    pkgs.sbt
     # go
     pkgs.go
     pkgs.gopls
