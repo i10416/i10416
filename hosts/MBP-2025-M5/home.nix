@@ -1,0 +1,51 @@
+{ username, stateVersion }:
+{
+  config,
+  pkgs,
+  ...
+}:
+let
+  _ = null;
+in
+{
+  home.stateVersion = stateVersion;
+  home.username = username;
+  fonts.fontconfig.enable = true;
+  home.language.base = "en_US.UTF-8";
+  programs.home-manager.enable = true;
+  programs.java = {
+    enable = true;
+    package = pkgs.jdk21;
+  };
+  programs.zsh = import ../../home-manager/zsh/default.nix;
+  programs.git = import ../../home-manager/git/default.nix;
+  programs.gh = import ../../home-manager/gh/default.nix;
+  programs.direnv = import ../../home-manager/direnv/default.nix;
+  programs.bat = import ../../home-manager/bat/default.nix;
+  programs.tmux = import ../../home-manager/tmux/default.nix { inherit pkgs; };
+  programs.vscode = import ../../home-manager/vscode/default.nix;
+  home.packages = [
+    # nix
+    pkgs.nil
+    # tools
+    pkgs.tree
+    # infrastructure
+    pkgs.tenv
+    # rust
+    pkgs.rustup
+    # scala
+    pkgs.scala-cli
+    pkgs.sbt
+    pkgs.mill
+    # go
+    pkgs.go
+    pkgs.gopls
+    # native
+    pkgs.ninja
+    pkgs.cmake
+    # docker
+    pkgs.docker
+    pkgs.colima
+  ];
+  news.display = "silent";
+}

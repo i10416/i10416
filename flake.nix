@@ -24,6 +24,25 @@
     in
     {
       darwinConfigurations = {
+        # MBP-2025-M5(16 inch, US)
+        C2QWQWGT2C = darwinSystem rec {
+          specialArgs = inputs;
+          inherit system;
+          modules = [
+            (import ./hosts/MBP-2025-M5/configuration.nix {
+              inherit self username;
+            })
+            home-manager.darwinModules.home-manager
+            {
+              home-manager.useGlobalPkgs = true;
+              home-manager.useUserPackages = true;
+              home-manager.users.${username} = import ./home.nix {
+                inherit username;
+                stateVersion = "25.11";
+              };
+            }
+          ];
+        };
         # MBP-2024-M4(14 inch, JIS)
         HP7Q66T465 = darwinSystem {
           specialArgs = inputs;
