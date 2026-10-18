@@ -38,6 +38,10 @@ sed -i '' "s/simple/$(scutil --get LocalHostName)/" flake.nix
 #### Clone from Remote
 
 ```sh
+nix-shell -p git
+```
+
+```
 git clone https://github.com/i10416/i10416
 ```
 
