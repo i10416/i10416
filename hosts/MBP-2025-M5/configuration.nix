@@ -3,21 +3,21 @@
 let
   # configuration
   nix = import ../../foundation/nix.nix { inherit pkgs lib; };
-  # userKeyMapping = import ../../foundation/darwin/hardware/keyboard/jis.nix;
   unfree-allow-list = import ../../foundation/unfree-allow-list.nix { inherit lib; };
-  system = import ../../foundation/system.nix { inherit pkgs; };
+  system = import ../../foundation/system.nix { inherit self pkgs; };
+  # Darwin specific configuration
   darwin-system = import ../../foundation/darwin/universal/system.nix {
     inherit self;
   };
   darwin-network = import ../../foundation/darwin/universal/network.nix;
   # tools
   universal-tools = import ../../tools/universal/default.nix { inherit pkgs; };
-  vim = (import ../../tools/vim/system/+24.11/default.nix);
+  vim = (import ../../tools/vim/system/+25.11/default.nix);
 in
 {
   imports = [
     nix
-    # unfree-allow-list
+    unfree-allow-list
     system
     darwin-system
     darwin-network

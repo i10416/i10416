@@ -16,15 +16,14 @@ in
       ];
       max-jobs = 8;
     };
-    extraOptions =
-      ''
-        auto-optimise-store = true
+    extraOptions = ''
+      auto-optimise-store = true
 
-        extra-substituters = https://devenv.cachix.org
-        extra-trusted-public-keys = devenv.cachix.org-1:w1cLUi8dv3hnoSPGAuibQv+f9TZLr6cv/Hm9XgU50cw=
-      ''
-      + lib.optionalString (pkgs.system == "aarch64-darwin") ''
-        extra-platforms = x86_64-darwin aarch64-darwin
-      '';
+      extra-substituters = https://devenv.cachix.org
+      extra-trusted-public-keys = devenv.cachix.org-1:w1cLUi8dv3hnoSPGAuibQv+f9TZLr6cv/Hm9XgU50cw=
+    ''
+    + lib.optionalString (pkgs.stdenv.hostPlatform.system == "aarch64-darwin") ''
+      extra-platforms = x86_64-darwin aarch64-darwin
+    '';
   };
 }

@@ -23,6 +23,7 @@
         AppleShowScrollBars = "Always";
         AppleShowAllFiles = true;
         NSAutomaticWindowAnimationsEnabled = false;
+        NSAutomaticPeriodSubstitutionEnabled = false;
         NSUseAnimatedFocusRing = false;
         AppleShowAllExtensions = true;
         AppleInterfaceStyle = "Dark";
@@ -65,6 +66,9 @@
         Dragging = true;
       };
       CustomUserPreferences = {
+        NSGlobalDomain = {
+          AppleMenuBarVisibleInFullscreen = true;
+        };
         "com.apple.finder" = {
           # When performing a search, search the current folder by default
           FXDefaultSearchScope = "SCcf";

@@ -17,6 +17,9 @@
     ".env"
     "**/.ssh/"
     "**/.gnupg/*"
+    # archive
+    "dist"
+    "result"
     # scala
     ".bsp"
     ".bloop"
@@ -25,9 +28,8 @@
     "target"
     "project/project"
     ".scala-build"
-    # archive
-    "dist"
-    "result"
+    # AI Tooling
+    ".claude"
   ];
   settings = {
     color = {

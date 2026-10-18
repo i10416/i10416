@@ -4,7 +4,7 @@ let
   # configuration
   nix = import ../../foundation/nix.nix { inherit pkgs lib; };
   unfree-allow-list = import ../../foundation/unfree-allow-list.nix { inherit lib; };
-  system = import ../../foundation/system.nix { inherit pkgs; };
+  system = import ../../foundation/system.nix { inherit self pkgs; };
   darwin-system = import ../../foundation/darwin/universal/system.nix {
     inherit self;
     stateVersion = 5;

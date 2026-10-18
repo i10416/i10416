@@ -5,7 +5,7 @@ let
   nix = import ../../foundation/nix.nix { inherit pkgs lib; };
   userKeyMapping = import ../../foundation/darwin/hardware/keyboard/jis.nix;
   unfree-allow-list = import ../../foundation/unfree-allow-list.nix { inherit lib; };
-  system = import ../../foundation/system.nix { inherit pkgs; };
+  system = import ../../foundation/system.nix { inherit self pkgs; };
   darwin-system = import ../../foundation/darwin/universal/system.nix {
     inherit self userKeyMapping;
   };

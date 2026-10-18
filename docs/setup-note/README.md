@@ -43,7 +43,7 @@ git clone https://github.com/i10416/i10416
 
 ```sh
 cd i10416
-nix build .#darwinConfigurations.<host name>.system
+nix build .#darwinConfigurations.`hostname`.system
 ```
 
 ### Setup /etc/nix-darwin to use `darwin-rebuild` command
@@ -59,6 +59,10 @@ sudo chown -R "$(id -nu):$(id -ng)" /etc/nix-darwin
 ```
 
 ### Sync
+
+```sh
+./result/sw/bin/darwin-rebuild switch --flake .
+```
 
 ```sh
 darwin-rebuild switch
